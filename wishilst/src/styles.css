@@ -1,0 +1,394 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body i {
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+.delete {
+  margin-right: 1px;
+}
+
+.delete:hover {
+  background-color: red;
+}
+.buy:hover {
+  background-color: red;
+}
+
+.delete:hover > i {
+  color: #fff;
+}
+.buy:hover > i {
+  color: #fff;
+}
+
+.wishlist-img {
+  width: 90px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.overlay {
+  display: none;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  width: 100%;
+}
+.item-container {
+  width: 20%;
+}
+
+.item-container:hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-container:hover .item-info {
+  background-color: rgba(216, 210, 210, 0.27);
+}
+
+.item-container:hover hr {
+  opacity: 0;
+}
+
+.item-name {
+  font-size: 0.7em;
+}
+
+.overlay-btn {
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 0.8em 1.7em;
+  font-weight: 600;
+}
+
+.nav > li {
+  height: 1em;
+  font-size: 12px;
+}
+
+.breadcrumb-item > a {
+  font-size: 0.6em;
+}
+
+.breadcrumb > i {
+  font-size: 10px;
+  margin-top: 0.4em;
+}
+
+.services {
+  position: absolute;
+  top: -1em;
+  left: 2.5%;
+  width: 95%;
+  height: 70%;
+  padding: 0 4em;
+}
+
+.service p {
+  font-size: 0.5em;
+}
+
+.service i {
+  font-size: 1em;
+}
+
+hr {
+  width: 8px;
+  opacity: 1;
+  height: 0px;
+  border: none;
+  border-top: 3px solid red;
+  color: transparent;
+  margin: 2em 0 10px 0;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.c-letter {
+  color: red;
+  font-weight: 600;
+}
+
+.store {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.9em;
+  font-size: 0.5em;
+  font-weight: 600;
+}
+
+.c-underline {
+  position: relative;
+  right: 4px;
+}
+
+.price {
+  color: red;
+}
+
+.nav-item:hover {
+  color: red;
+}
+
+.nav-item:hover {
+  color: red;
+}
+
+.nav-item > hr {
+  display: none;
+}
+
+.nav-item:hover > hr {
+  width: 10px;
+  color: red;
+  display: inline;
+  margin: 0;
+}
+
+.wishlist-header {
+  background: url("https://ak.picdn.net/shutterstock/videos/18932999/thumb/1.jpg");
+  height: 100px;
+}
+
+.wishlist-header h1 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.wishlist-header > .item-name {
+  font-size: 12.5px;
+  line-height: 15px;
+  margin: 1em 1em 0 1em;
+}
+
+.page-link {
+  color: #ccc;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+.page-link:hover {
+  color: rgb(232, 59, 59);
+  border: 2px solid black;
+  background-color: #fff;
+}
+
+.active-page-link {
+  color: rgb(232, 59, 59);
+  border: 2px solid black;
+}
+
+.active > .page-link {
+  color: red;
+}
+
+.page-container {
+  list-style: none;
+}
+
+.clear-btn {
+  background-color: transparent;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 0.8em 1.7em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.disabled {
+  color: #cccc;
+}
+
+.wishlist-amount {
+  background-color: #000000;
+  border-radius: 19px;
+  margin-bottom: 0.6em;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+.wishlist-amount > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 0.65em;
+  font-weight: 600;
+}
+
+.wishlist-price > span {
+  font-size: 0.6em;
+  font-weight: 700;
+  margin-left: 0.5em;
+}
+
+.wishlist-price > i {
+  color: rgb(232, 59, 59);
+  cursor: pointer;
+}
+
+.wishlist-price {
+  padding: 0.3em 1em 0.3em 0.5em;
+  position: relative;
+  width: 6.6em;
+}
+
+.white-bg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 8%;
+  right: -12%;
+  background-color: #fff;
+}
+
+/* footer  */
+
+.fa-envelope {
+  border: 1px solid #cccccc;
+  padding: 0.5em 1em;
+  color: #ccc;
+  border-left: none;
+}
+
+.input-container {
+  width: 40%;
+}
+
+.mail-input {
+  border: 1px solid #cccccc;
+  padding: 0.25em 0.7em;
+  border-right: none;
+  outline: none;
+  width: 90%;
+}
+
+.mail-input::placeholder {
+  font-size: 0.4em;
+}
+
+.mail-input > i {
+  color: #ccc;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+table i {
+  color: #ccc;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+.socials-container {
+  background-color: rgb(242, 242, 242);
+}
+
+.copyright-container {
+  background-color: rgb(213, 209, 209);
+}
+
+.socials {
+  height: 5em;
+}
+
+.socials td:hover {
+  background-color: red;
+}
+.socials td:hover > i {
+  color: #fff;
+}
+.socials td {
+  padding: 0.4em 0.9em;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.socials > table {
+  display: table-row;
+}
+
+.contact-us > h6 {
+  width: 20%;
+  font-size: 0.6em;
+  margin: 0;
+}
+
+.separator {
+  opacity: 1;
+  height: 0px;
+  border: none;
+  border-top: 1px solid rgb(218, 215, 215);
+  color: transparent;
+  margin: 16px 0 5em 0;
+}
+
+.copyright {
+  height: 5em;
+}
+
+.credit-card {
+  width: 40px;
+  border-radius: 10%;
+  margin: 0.1em;
+}
+
+.copyright-text {
+  width: 25%;
+  font-weight: 600;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  color: #eaeaea;
+}
+
+.copyright-text > span {
+  color: #000000;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
